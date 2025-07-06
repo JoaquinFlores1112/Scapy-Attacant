@@ -21,7 +21,13 @@ Scapy es una herramienta de Python para crear, enviar, capturar y manipular paqu
 | in2.py      |
 | in3.py      |
 +-------------+
-## 🛠️ Configuración
+## ⚠️ Advertencia: Este proyecto debe ejecutarse únicamente en entornos de prueba o laboratorio controlado. Su uso en redes reales o de producción sin autorización puede ser ilegal y conllevar consecuencias graves.
+## Antes de comenzar:
+Primero se debe comprobar que los contenedores de cliente y servidor esten corriendo
+```
+sudo docker ps -a
+```
+## 🛠️ Configuración atacante
 ### 💻 PC 2 (Atacante con Scapy ):
 #### Sniff.py
 ```
@@ -218,4 +224,18 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
+### ⚙️ COMANDOS PARA EJECUTAR:
+```
+sudo python3 <script_a_ejecutar.py>
+```
+### 📂 Estructura del repositorio:
+```
+.
+├── Atacante/
+│   ├── sniff.py
+    └── in1.py
+    └── in2.py
+    └── mod1.py
+    └── mod2.py
+    └── mod3.py
+```
