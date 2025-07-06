@@ -5,7 +5,7 @@ En esta ocasion se busca atacar la conexion Cliente-Servidor creada anteriorment
 HTTP tiene varias vulnerabilidades porque no cifra los datos, lo que permite ataques de intercepción como el sniffing. Es susceptible a ataques de intermediario (MITM), donde un atacante puede modificar la información en tránsito. También permite suplantación de identidad, ya que no verifica la autenticidad del emisor. Además, es vulnerable a inyecciones si no se validan correctamente las entradas del usuario.
 ## ¿Que es Scapy?
 Scapy es una herramienta de Python para crear, enviar, capturar y manipular paquetes de red.
-## Estructura del pryoecto
+## Estructura del proyecto
  ```
 +-------------+ (cliente.py dentro de contenedor)         +-------------+
 |     PC 2    | ----------------------------------------> |    PC 1     |
@@ -227,9 +227,13 @@ if __name__ == "__main__":
     main()
 ```
 ### ⚙️ COMANDOS PARA EJECUTAR:
+Una vez creados los scripts se ejecutan para realizar lo deseado.
 ```
 sudo python3 <script_a_ejecutar.py>
 ```
+### ¿Que deberiamos ver?
+-Al ejecutar el script de sniff, deberia verse por la consola del atacante todo el contenido del paquete de respuesta en texto plano
+-Al ejecutar los scripts de inyeccion o modificacion deberiamos ver en wireshark, la generacion de un get, seguida de una respuesta de error por parte del servidor, ademas deberian verse los paquetes SYN, SYN-ACK, ACK, del handshake TCP,
 ### 📂 Estructura del repositorio:
 ```
 .
