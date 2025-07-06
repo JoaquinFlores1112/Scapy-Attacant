@@ -6,7 +6,7 @@ HTTP tiene varias vulnerabilidades porque no cifra los datos, lo que permite ata
 ## ¿Que es Scapy?
 Scapy es una herramienta de Python para crear, enviar, capturar y manipular paquetes de red.
 ## Estructura del pryoecto
-<pre> ```text +---------------------------------------------------+ +-------------+ | PC 2 | | PC 1 | | Cliente (contenedor) Atacante (host físico)| | Servidor | | +----------------------+ +------------------+ | | | | | cliente.py | | sniff.py | | | Apache | | | Dockerfile | | mod1.py | | | index.html | | +----------------------+ | mod2.py | | | Dockerfile | | | in1.py | | +-------------+ | | in2.py | | | | in3.py | | | +------------------+ | +---------------------------------------------------+ HTTP GET --------------------------> (modificada o no) <------------------------ ``` </pre>
+ ```text +---------------------------------------------------+ +-------------+ | PC 2 | | PC 1 | | Cliente (contenedor) Atacante (host físico)| | Servidor | | +----------------------+ +------------------+ | | | | | cliente.py | | sniff.py | | | Apache | | | Dockerfile | | mod1.py | | | index.html | | +----------------------+ | mod2.py | | | Dockerfile | | | in1.py | | +-------------+ | | in2.py | | | | in3.py | | | +------------------+ | +---------------------------------------------------+ HTTP GET --------------------------> (modificada o no) <------------------------ ``` 
 ## ⚠️ Advertencia: Este proyecto debe ejecutarse únicamente en entornos de prueba o laboratorio controlado. Su uso en redes reales o de producción sin autorización puede ser ilegal y conllevar consecuencias graves.
 ## Antes de comenzar:
 Primero se debe comprobar que los contenedores de cliente y servidor esten corriendo
